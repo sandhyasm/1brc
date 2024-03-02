@@ -11,12 +11,11 @@ import (
 
 // Paris=1.2/20.6/12.2
 
-var temperatureMinData = make(map[string]float64)
-var temperatureMaxData = make(map[string]float64)
-var temperatureAvgData = make(map[string]float64)
-var cityCountData = make(map[string]int)
-
 func Process(r io.Reader) (string, error) {
+	var temperatureMinData = make(map[string]float64)
+	var temperatureMaxData = make(map[string]float64)
+	var temperatureAvgData = make(map[string]float64)
+	var cityCountData = make(map[string]int)
 
 	scanner := bufio.NewScanner(r)
 	scanner.Split(bufio.ScanLines)
