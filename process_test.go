@@ -10,7 +10,7 @@ import (
 var op string
 
 func BenchmarkProcess(b *testing.B) {
-	file, err := os.Open("data/measurements.txt")
+	file, err := os.Open("/Users/sandhyashinde/Downloads/measurements.txt")
 	if err != nil {
 		panic(err)
 	}
