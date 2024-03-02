@@ -30,7 +30,7 @@ func Process(r io.Reader) (string, error) {
 		if err != nil {
 			return "", err
 		}
-		object := cityData[city]
+
 		if cityData[city] != nil {
 			if cityData[city].temperatureMin > float64(temperature) {
 				cityData[city].temperatureMax = cityData[city].temperatureMin
